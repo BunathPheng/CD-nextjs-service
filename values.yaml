@@ -2,7 +2,7 @@
 namespace: my-nextjs-namespace
 image:
   imageRepository: phengbunath/nextjsservice
-  tag: 0.0.0
+  tag: 2
 
 service:
   type: LoadBalancer   # <-- LoadBalancer type
