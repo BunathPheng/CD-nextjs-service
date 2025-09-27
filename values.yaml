@@ -1,0 +1,11 @@
+# values.yaml
+namespace: my-nextjs-namespace
+image:
+  imageRepository: phengbunath/nextjsservice
+  tag: 0.0.0
+
+service:
+  type: LoadBalancer   # <-- LoadBalancer type
+  port: 8080
+  targetPort: 8080
+  # nodePort is ignored for LoadBalancer
