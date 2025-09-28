@@ -18,4 +18,6 @@ spec:
       - name: {{ .Chart.Name }}
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         ports:
-        - containerPort: {{ .Values.image.containerPort }}
+        ports:
+          - containerPort: {{ .Values.service.targetPort }}
+          
